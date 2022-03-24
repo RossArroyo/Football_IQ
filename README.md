@@ -43,8 +43,6 @@ innerworkings of football.
 below are examples of student athletes twitter bios that include their measurables, I included what it would look like with their FBIQ score
 <img width="500" alt="Athlete profile 3" src="https://user-images.githubusercontent.com/89609602/160023677-fb3bbab6-c067-4483-bb3c-99f7261e25f7.png">
 <img width="500" alt="Athlete profile 2" src="https://user-images.githubusercontent.com/89609602/160023652-164fae87-2217-44af-8720-371d4c482305.png">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="500" alt="Athlete profile 1" src="https://user-images.githubusercontent.com/89609602/160023601-63836e80-8112-4156-b21b-d1b1c944c393.png"> 
 
 Deliverables: 
@@ -58,6 +56,4 @@ Application with(for project will focus on OL):
 </ul>
 
 Below is a rough inital design for a UI  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="747" alt="UI for MC" src="https://user-images.githubusercontent.com/89609602/160024403-e248e025-8efa-42a0-acbd-012b987f6319.png">
