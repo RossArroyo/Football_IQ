@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Football_IQ</string>
+    <string name="app_name">Football IQ</string>
+    <string name="inspire_message">Lets get better today!</string>
+    <string name="greeting">Welcome to Football IQ Ross!</string>
 </resources>
