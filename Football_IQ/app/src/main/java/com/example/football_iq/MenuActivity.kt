@@ -27,7 +27,7 @@ class MenuActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMenu2.toolbar)
 
         binding.appBarMenu2.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Share your results with coaches!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout

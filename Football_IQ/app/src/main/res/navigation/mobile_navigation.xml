@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.football_iq.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_topics"
+        android:name="com.example.football_iq.ui.topics.TopicsFragment"
+        android:label="@string/menu_topics"
+        tools:layout="@layout/fragment_topics" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.football_iq.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.football_iq.ui.testing.TestingFragment"
+        android:label="@string/menu_testing"
+        tools:layout="@layout/fragment_testing" />
 </navigation>

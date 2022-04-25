@@ -1,4 +1,4 @@
-package com.example.football_iq.ui.gallery
+package com.example.football_iq.ui.testing
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.football_iq.R
-import com.example.football_iq.databinding.FragmentGalleryBinding
+import com.example.football_iq.databinding.FragmentTestingBinding
 
-class GalleryFragment : Fragment() {
+class TestingFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
-    private var _binding: FragmentGalleryBinding? = null
+    private lateinit var testingViewModel: TestingViewModel
+    private var _binding: FragmentTestingBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,14 +24,14 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+        testingViewModel =
+            ViewModelProvider(this).get(TestingViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentTestingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = binding.textTesting
+        testingViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
