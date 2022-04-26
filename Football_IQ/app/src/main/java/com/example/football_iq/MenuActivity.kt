@@ -26,6 +26,8 @@ class MenuActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMenu2.toolbar)
 
+
+        //text displayed when clicking button on bottom left of screen
         binding.appBarMenu2.fab.setOnClickListener { view ->
             Snackbar.make(view, "Share your results with coaches!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
