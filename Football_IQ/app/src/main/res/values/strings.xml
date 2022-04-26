@@ -13,4 +13,32 @@
     <string name="menu_home">Home</string>
     <string name="menu_topics">Topics</string>
     <string name="menu_testing">Testing</string>
+
+
+    <!--***************************************strings for content*************************************************************-->
+    <string name="basic_alignment">The offensive line is comprised of 5 people. It has 2 tackles,
+                                    2 guards, and 1 center. th order in which they are present is
+                                    left tackle, left guard, center, right guard, right tackle.</string>
+
+    <string name="blocking_schemes">The blocking scheme that a offensive line must execute is determined
+                                    by the play call. There are 7 base types of blocking schemes including
+                                    inside zone, outside zone, power, counter, pass pro, screens, and
+                                    draws. While these are base types there are variations with subtle
+                                    differences</string>
+
+    <string name="combinations">    With offensive line being the one of the most cooperative positions in any sport
+                                    combinations are a key component of each players skills. Often when performing a
+                                    combination block, the goal is to drive the initial defensive lineman back to a linebacker.
+                                    However there are instances where you will do a combination block against only one person and
+                                    this is called a combination kill block since it is intended to dominate a defensive lineman. There are instances
+                                    where you will do a combination kill block against highly skilled defensive lineman to even the playing
+                                    field but these instances are rare.</string>
+
+    <string name="reading_defenses"> What separates good and great offensive lineman is the ability to read a defense. defenses tend
+                                    to fall into 2 categories, 3 down and 4 down. This talks about the number of defensive lineman on the line
+                                    of scrimmage. The alignment of the 3/4 defensive lineman also matters as this can give you and idea as to
+                                    what the rest of the defense is doing; the variety of alignments is numerous so we will only cover a few in a
+                                    later topic. </string>
+
+    <!--*********************************************************************************************************************************************-->
 </resources>
