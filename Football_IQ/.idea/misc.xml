@@ -24,7 +24,8 @@
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/fragment_testing.xml" value="0.29635416666666664" />
         <entry key="app/src/main/res/layout/fragment_topics.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/nav_header_menu2.xml" value="0.58984375" />
+        <entry key="app/src/main/res/layout/nav_header_menu2.xml" value="0.424190800681431" />
+        <entry key="app/src/main/res/layout/topics_content_item.xml" value="0.284375" />
         <entry key="app/src/main/res/menu/activity_menu_drawer.xml" value="0.2660893758138021" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1745" />

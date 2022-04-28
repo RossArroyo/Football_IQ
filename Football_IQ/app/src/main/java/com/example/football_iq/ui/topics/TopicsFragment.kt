@@ -1,44 +1,52 @@
 package com.example.football_iq.ui.topics
 
+import android.content.Context
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.example.football_iq.databinding.FragmentTopicsBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.football_iq.R
+import com.example.football_iq.adapters.TopicsContentAdapter
+import com.example.football_iq.convertor.AppDatabase
+import com.example.football_iq.data.TopicsContent
+import com.example.football_iq.data.TopicsContentDao
 
 class TopicsFragment : Fragment() {
-
-    private lateinit var topicsViewModel: TopicsViewModel
-    private var _binding: FragmentTopicsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        topicsViewModel =
-            ViewModelProvider(this).get(TopicsViewModel::class.java)
-
-        _binding = FragmentTopicsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textTopics
-        topicsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+    companion object {
+        fun newInstance() = TopicsFragment()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private lateinit var viewModel: TopicsViewModel
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view: View = inflater.inflate(R.layout.fragment_topics, container, false)
+        val context: Context = view.context
+
+        // Configure the RecyclerView
+        val contentListView: RecyclerView = view.findViewById(R.id.topics_content_list)
+        contentListView.layoutManager = LinearLayoutManager(context)
+
+        // Configure the adapter
+        val contentAdapter = TopicsContentAdapter(getData())
+        contentListView.adapter = contentAdapter
+
+        return view
+    }
+
+    private fun getData(): Array<TopicsContent> {
+        val academyDao: TopicsContentDao = AppDatabase.getInstance(requireContext()).academyContentDao()
+        return academyDao.getAllContent().toTypedArray()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel = ViewModelProvider(this)[TopicsViewModel::class.java]
     }
 }

@@ -33,8 +33,32 @@ android {
         viewBinding true
     }
 }
-
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'kotlin-ksp'
 dependencies {
+
+
+
+    implementation("androidx.room:room-runtime:2.4.2")
+    annotationProcessor("androidx.room:room-compiler:2.4.2")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:2.4.2")
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:2.4.2")
+    // optional - RxJava2 support for Room
+    implementation("androidx.room:room-rxjava2:2.4.2")
+    // optional - RxJava3 support for Room
+    implementation("androidx.room:room-rxjava3:2.4.2")
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation("androidx.room:room-guava:2.4.2")
+    // optional - Test helpers
+    testImplementation("androidx.room:room-testing:2.4.2")
+    // optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:2.5.0-alpha01")
+
+    // Added for viewModel support
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    implementation "androidx.fragment:fragment-ktx:1.4.0"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'

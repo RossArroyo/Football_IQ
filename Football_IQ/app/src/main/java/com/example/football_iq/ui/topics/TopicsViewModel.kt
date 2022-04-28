@@ -13,5 +13,4 @@ class TopicsViewModel : ViewModel() {
         value = "@string/basic_alignment"
     }
     val text: LiveData<String> = _text
-    val base: LiveData<String> = _base
 }
